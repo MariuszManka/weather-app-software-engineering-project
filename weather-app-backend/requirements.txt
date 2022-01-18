@@ -1,0 +1,6 @@
+Flask==1.0.2
+flask_swagger_ui==3.36.0
+requests==2.21.0
+seeed_python_dht==0.0.2
+websockets==10.0
+Werkzeug==0.14.1
