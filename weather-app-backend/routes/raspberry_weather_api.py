@@ -27,7 +27,7 @@ async def handler(websocket, path):
         await websocket.send(json.dumps(data))
         await asyncio.sleep(1)
 
-start_server = websockets.serve(handler, "192.168.1.19", 5000)
+start_server = websockets.serve(handler, "192.168.1.19", 8888)
 
 asyncio.get_event_loop().run_until_complete(start_server)
 asyncio.get_event_loop().run_forever()
