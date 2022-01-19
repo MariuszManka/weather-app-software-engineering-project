@@ -4,7 +4,7 @@
 ### Aby uruchomić serwer aplikacji wymaganym jest posiadanie środowiska **Python w wersji co najmniej 3.7.x lub wyższej!**
 Aby uruchomić serwer API ściągamy projekt na naszą lokalną maszynę. Możemy to zrobić używając polecenia:
 ```git
-git clone https://github.com/MariuszManka/weather-api-project.git
+git clone https://github.com/MariuszManka/weather-app-software-engineering-project.git
 ``` 
 z poziomu wybranego przez nas folderu. 
 Gdy już projekt zostanie ściągnięty na nasz lokalny komputer, wydajemy z poziomy konsoli polecenie: 
