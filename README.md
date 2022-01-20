@@ -18,4 +18,11 @@ Aplikacja posiada 3 główne funkcjonalności:
 | Seeed_python_dht | 0.0.2 | **Python** | [github.com/Seeed-Studio](https://github.com/Seeed-Studio/Seeed_Python_DHT) |
 | Websockets | 10.0 | **Python** | [websockets.readthedocs.io](https://websockets.readthedocs.io/en/stable/) |
 | Werkzeug | 0.14.1 | **Python** | [werkzeug.palletsprojects.com](https://werkzeug.palletsprojects.com/en/2.0.x/) |
+| ------ | ------ | ------ | ------ |
+| recharts | 2.1.8 | **JavaScript** | [recharts.org](https://recharts.org/en-US/) |
+| lodash | 4.17.21 | **JavaScript** | [lodash.com](https://lodash.com/) |
+| momentjs | 2.29.1 | **JavaScript** | [momentjs.com/docs](https://momentjs.com/docs/) |
+| react-swipeable-views | 0.14.0 | **JavaScript** | [react-swipeable-views.com](https://react-swipeable-views.com/) |
+| @mui/material | 5.2.8 | **JavaScript** | [mui.com](https://mui.com/) |
 ***
+
