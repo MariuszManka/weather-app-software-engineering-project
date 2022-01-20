@@ -1,5 +1,10 @@
 # Weather App - Software Engineering Project [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
+### Mariusz Mańka - Tymoteusz Małkowski - Damian Ludwig
+### Informatyka - niestacjonarnie - V semestr
+### Politechnika Śląska - Wydział Matematyki Stosowanej 
+### Inżynieria oprogramowania - Projekt zaliczeniowy
+***
 Aplikacja została stworzona na potrzeby przedmiotu **"Inżynieria oprogramowania"** jako projekt zaliczeniowy. 
 Serwer aplikacji został napisany w języku **Python** z wykorzystaniem biblioteki **Flask**. Warstwa wizualna łącząca się z pythonowym API została napisana w języku **Java**. W aplikacji wykorzystaliśmy  zewnętrzne API w celu uzyskania szczegółowych informacji o pogodzie. **API to pochodzi ze strony: [openweathermap.org]( https://openweathermap.org/api)** i pozwala nam na zebranie informacji o obecnym stanie pogody, oraz prognozie na najbliższe 3 dni dla podanego przez nas miasta. W projekcie również korzystamy z **Raspberry Pi w wersji 3 B+** wraz z nakładką **Grove Base HAT** oraz kompatybilnym z nią czujnikiem temperatury oraz wilgotności - **Grove Temp&Humi Sensor DHT11**. 
 
