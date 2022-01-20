@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Weather App - Frontend   [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Mariusz Mańka - Tymoteusz Małkowski - Damian Ludwig
+### Informatyka - niestacjonarnie - V semestr
+### Politechnika Śląska - Wydział Matematyki Stosowanej 
+### Inżynieria oprogramowania - Projekt zaliczeniowy
+***
+## Instalacja oraz uruchomienie warstwy Frontendu
+### Aby uruchomić warstwę Frontendową naszej aplikacji potrzebujemy mieć zainstalowany na naszej lokalnej maszynie program [Node.js](https://nodejs.org/en/) w wersji co najmniej `16.13.2`
 
-## Available Scripts
+Gdy już spełnimy to wymaganie, ściągamy projekt na naszą lokalną maszynę. Możemy to zrobić używając polecenia:
+```git
+git clone https://github.com/MariuszManka/weather-app-software-engineering-project.git
+``` 
+z poziomu wybranego przez nas folderu. 
 
-In the project directory, you can run:
+Gdy już projekt zostanie ściągnięty na nasz lokalny komputer, wydajemy z poziomu konsoli polecenie: 
+``` cmd
+npm install
+``` 
+Pozwoli to na natychmiastowe zainstalowanie niezbędnych do działania projektu paczek za pomocą jednej komendy. Następnie możemy już uruchomić nasz frontend poleceniem:
+```python
+npm start
+```
+**Po chwili powinna nam się otworzyć strona startowa projektu pod adresem: `127.0.0.1:3000`**   
+***
+## Dokumentacja aplikacji:
+Aplikacja posiada `3 różne widoki`, korzystające z `3 różnych endpointów`, reprezentowane przez zakładki u góry strony. Szata graficzna pierwszych dwóch widoków jest bardzo podobna. jedyną różnicą są karty z prognozą pogody. Natomiast wygląd trzeciej zakładki nieco odbiega od reszty. Przedstawiony jest na nim wykres, którego dane generowane są w czasie rzeczywistym na podstawie danych otrzymywanych z serwera `WebSocket`. W pierwszych dwóch widokach istnieje możliwość interakcji ze stroną. W górnej części widoku, na środku udostępniona jest kontrolka, w której można wpisać nazwę miasta dla którego chcemy pobrać pogodę. Nazwa ta zostanie użyta jako parametr i przekazana do pythonowego serwera pogody z którego korzysta aplikacja. **Dzięki temu zawartość ekranu zostanie uzupełniona danymi dotyczącymi pogody dla wybranego przez nas miasta**. Nazwę miasta zatwierdzamy przyciskiem `Enter`. **Nazwy miast lub regionów można wprowadzać w języku polskim zwracając uwagę na poprawność wprowadzanych danych.** Na uwagę zasługuje również prawy panel z pierwszych dwóch zakładek, prezentujący dodatkowe informacje o pogodzie w formie ikonek. Po najechaniu kursorem myszy na daną ikonkę wyświetlona zostanie informacja o tym jakie dane są przez nią reprezentowane. W centralnej części ekranu wyświetlane są informacje o temperaturze. Dużą oraz pogrubioną czcionką prezentowane są dane o obecnej temperaturze. Mniejszą czcionką oznaczona jest informacja o najwyższym oraz najniższym odczycie temperatury danego dnia. 
+***
+## `Aktualna pogoda`
+![Zakładka aktualna pogoda](https://github.com/MariuszManka/weather-app-software-engineering-project/blob/master/images/aktualna_pogoda.png)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### **Zakładka korzysta z endpointu: :** `http://127.0.0.1:5000/api/v1/current-weather?q={city_name}` gdzie `city_name` to parametr mówiący o tym dla jakiego miasta pobieramy pogodę. Parametr ten pobierany jest z kontrolki.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+***
 
-### `npm test`
+## `Prognoza pogody`
+![Zakładka prognoza pogody](https://github.com/MariuszManka/weather-app-software-engineering-project/blob/master/images/prognoza_pogody.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+#### **Zakładka korzysta z endpointu: :** `http://127.0.0.1:5000/api/v1/forecast?q={city_name}` gdzie `city_name` to parametr mówiący o tym dla jakiego miasta pobieramy prognozę. Parametr ten pobierany jest z kontrolki.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+***
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## `Pogoda z czujnika`
+![Zakładka pogoda z czujnika](https://github.com/MariuszManka/weather-app-software-engineering-project/blob/master/images/pogoda_z_czujnika.gif)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### **Zakładka korzysta z endpointu: :** `ws://192.168.1.19:8888`.
+W tym widoku dane pochodzą z serwera `WebSocket`. Na podstawie odświeżających się z częstotliwością `5-ciu sekund` danych rysowany jest wykres przedstawiający rozkład temperatury (`czerwona linia`) oraz wilgotności powietrza (`niebieska linia`) w czasie. 
