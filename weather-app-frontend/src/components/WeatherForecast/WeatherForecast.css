@@ -1,0 +1,19 @@
+
+.weather-forecast-additional-info-card{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+.weather-forecast-additional-info-0{
+   grid-area: additional_info1;
+}
+
+.weather-forecast-additional-info-1{
+   grid-area: additional_info2;
+}
+
+.weather-forecast-additional-info-2{
+   grid-area: additional_info3;
+}

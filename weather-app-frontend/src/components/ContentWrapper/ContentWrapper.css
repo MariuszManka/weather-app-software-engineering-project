@@ -1,0 +1,12 @@
+.current-weather-wrapper{ 
+   padding: 3% 15%;
+   display: grid; 
+   grid-template-columns: 1fr 1fr 1fr; 
+   grid-template-rows: 1fr 5fr 1fr; 
+   gap: 15px 40px; 
+   grid-template-areas: 
+    "header header header"
+    "icon temp info"
+    "additional_info1 additional_info2 additional_info3"; 
+    max-height: 80vh;
+}
