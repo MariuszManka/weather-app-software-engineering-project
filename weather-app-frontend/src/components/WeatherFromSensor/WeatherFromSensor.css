@@ -1,0 +1,39 @@
+.weather-from-sensor-wrapper{
+   display: grid; 
+   grid-template-columns: 1fr 1fr 1fr; 
+   grid-template-rows: 2.5fr 1fr; 
+   gap: 0px 0px; 
+   grid-template-areas: 
+     "line_plot line_plot line_plot"
+     "temp . humi"; 
+}
+
+.weather-from-sensor-line-plot{
+   grid-area: line_plot; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.weather-from-sensor-heading{
+   width: 100%;
+   text-align: center;
+   margin-bottom: 50px;
+   margin-top: 25px;
+}
+
+.weather-from-sensor-temp{
+   grid-area: temp; 
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+   width: 100%;
+}
+
+.weather-from-sensor-humi{
+   grid-area: humi; 
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+   width: 100%;
+}
